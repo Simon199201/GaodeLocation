@@ -61,6 +61,11 @@ public class Location_Activity extends CheckPermissionsActivity
         initLocation();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
     //初始化控件
     private void initView() {
         rgLocationMode = (RadioGroup) findViewById(R.id.rg_locationMode);
